@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Details - CricDash</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Background Elements for Glassmorphism -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <div class="dashboard-container" style="display: block;">
+        
+        <!-- Header -->
+        <header class="top-header glass-panel" style="margin-bottom: 20px;">
+            <div class="logo">
+                <i class="fa-solid fa-fire-flame-curved"></i>
+                <h1 style="display:inline; margin-left: 10px; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">CricDash</h1>
+            </div>
+            
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <a href="index.html" class="btn-refresh" style="text-decoration: none;">
+                    <i class="fa-solid fa-arrow-left"></i> Back to Dashboard
+                </a>
+                <div class="user-profile">
+                    <!-- Injected by auth.js -->
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <section class="matches-section">
+                <div class="glass-panel" style="padding: 40px; min-height: 70vh;" id="match-details-container">
+                    <div class="loader" style="margin: 50px auto; text-align: center;">Loading Scorecard...</div>
+                </div>
+                
+                <div id="analytics-panel-container" style="margin-top: 30px;">
+                    <!-- AI Analytics Engine injected via JS -->
+                </div>
+            </section>
+            <!-- Premium Footer -->
+            <footer class="site-footer glass-panel">
+                <div class="footer-grid">
+                    <!-- Brand Section -->
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <i class="fa-solid fa-cricket-bat-ball"></i>
+                            <h2>CricDash</h2>
+                        </div>
+                        <p class="brand-subtitle">Cricket Live Score Dashboard</p>
+                        <p class="desc">AI-powered cricket analytics and live score tracking platform.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Live Matches</a></li>
+                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Analytics</a></li>
+                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Predictions</a></li>
+                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="footer-links">
+                        <h4>Features</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Match Winner Prediction</a></li>
+                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Final Score Prediction</a></li>
+                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Run Rate Analytics</a></li>
+                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Live Match Tracking</a></li>
+                            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Interactive Charts</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Technologies -->
+                    <div class="footer-tech">
+                        <h4>Technologies</h4>
+                        <div class="tech-badges">
+                            <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+                            <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                            <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="tech-badge"><i class="fa-solid fa-chart-pie"></i> Chart.js</span>
+                            <span class="tech-badge"><i class="fa-solid fa-bolt"></i> RapidAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Cricket Live Score Dashboard. All Rights Reserved.</p>
+                    <p class="made-by">Built with <i class="fa-solid fa-heart" style="color: #ff3b30;"></i> by Kishor Kumar</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Firebase & Auth Logic -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="auth.js"></script>
+    
+    <script src="match.js"></script>
+</body>
+</html>

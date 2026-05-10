@@ -1,0 +1,109 @@
+[
+  {
+    "id": "match_001",
+    "status": "LIVE",
+    "team1": {
+      "name": "Chennai Super Kings",
+      "short": "CSK",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Chennai_Super_Kings_Logo.svg/1200px-Chennai_Super_Kings_Logo.svg.png",
+      "score": "184/4",
+      "overs": "18.2"
+    },
+    "team2": {
+      "name": "Mumbai Indians",
+      "short": "MI",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cd/Mumbai_Indians_Logo.svg/1200px-Mumbai_Indians_Logo.svg.png",
+      "score": "0/0",
+      "overs": "0.0"
+    },
+    "toss": "CSK won the toss and elected to bat",
+    "currentRunRate": "10.1",
+    "requiredRunRate": "-",
+    "topBatsman": { "name": "Ruturaj Gaikwad", "runs": 78, "balls": 45 },
+    "topBowler": { "name": "Jasprit Bumrah", "wickets": 2, "runs": 24, "overs": "4.0" },
+    "prediction": { "CSK": 75, "MI": 25 },
+    "scoreProgression": {
+      "overs": ["5", "10", "15", "18"],
+      "runs": [45, 92, 148, 184]
+    }
+  },
+  {
+    "id": "match_002",
+    "status": "LIVE",
+    "team1": {
+      "name": "Royal Challengers Bengaluru",
+      "short": "RCB",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Royal_Challengers_Bangalore_2020.svg/1200px-Royal_Challengers_Bangalore_2020.svg.png",
+      "score": "212/6",
+      "overs": "20.0"
+    },
+    "team2": {
+      "name": "Kolkata Knight Riders",
+      "short": "KKR",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Kolkata_Knight_Riders_Logo.svg/1200px-Kolkata_Knight_Riders_Logo.svg.png",
+      "score": "198/5",
+      "overs": "19.0"
+    },
+    "toss": "KKR won the toss and elected to bowl",
+    "currentRunRate": "10.42",
+    "requiredRunRate": "15.0",
+    "topBatsman": { "name": "Andre Russell", "runs": 55, "balls": 22 },
+    "topBowler": { "name": "Mohammed Siraj", "wickets": 3, "runs": 32, "overs": "4.0" },
+    "prediction": { "RCB": 85, "KKR": 15 },
+    "scoreProgression": {
+      "overs": ["5", "10", "15", "20"],
+      "runs": [55, 110, 160, 212]
+    }
+  },
+  {
+    "id": "match_003",
+    "status": "UPCOMING",
+    "team1": {
+      "name": "Gujarat Titans",
+      "short": "GT",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gujarat_Titans_Logo.svg/1200px-Gujarat_Titans_Logo.svg.png",
+      "score": "-",
+      "overs": "-"
+    },
+    "team2": {
+      "name": "Rajasthan Royals",
+      "short": "RR",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/60/Rajasthan_Royals_Logo.svg/1200px-Rajasthan_Royals_Logo.svg.png",
+      "score": "-",
+      "overs": "-"
+    },
+    "toss": "Match starts at 7:30 PM",
+    "currentRunRate": "-",
+    "requiredRunRate": "-",
+    "prediction": { "GT": 50, "RR": 50 }
+  },
+  {
+    "id": "match_004",
+    "status": "COMPLETED",
+    "team1": {
+      "name": "Sunrisers Hyderabad",
+      "short": "SRH",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Sunrisers_Hyderabad.svg/1200px-Sunrisers_Hyderabad.svg.png",
+      "score": "277/3",
+      "overs": "20.0"
+    },
+    "team2": {
+      "name": "Delhi Capitals",
+      "short": "DC",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Delhi_Capitals_Logo.svg/1200px-Delhi_Capitals_Logo.svg.png",
+      "score": "225/8",
+      "overs": "20.0"
+    },
+    "result": "SRH won by 52 runs",
+    "toss": "DC won the toss and elected to bowl",
+    "currentRunRate": "-",
+    "requiredRunRate": "-",
+    "topBatsman": { "name": "Travis Head", "runs": 102, "balls": 41 },
+    "topBowler": { "name": "Pat Cummins", "wickets": 4, "runs": 35, "overs": "4.0" },
+    "prediction": { "SRH": 100, "DC": 0 },
+    "scoreProgression": {
+      "overs": ["5", "10", "15", "20"],
+      "runs": [70, 140, 200, 277]
+    }
+  }
+]

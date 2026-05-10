@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - CricDash</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme auth-page">
+    <!-- Background Elements for Glassmorphism -->
+    <div class="bg-shape shape-1" style="width: 500px; height: 500px; top: -10%; left: -10%;"></div>
+    <div class="bg-shape shape-2" style="width: 600px; height: 600px; bottom: -20%; right: -10%;"></div>
+    <div class="bg-shape shape-3" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+
+    <div class="auth-wrapper">
+        <div class="auth-card glass-panel" style="max-width: 500px;">
+            <div class="auth-header">
+                <div class="logo">
+                    <i class="fa-solid fa-fire-flame-curved"></i>
+                    <h2>CricDash</h2>
+                </div>
+                <p>Create an account to access premium analytics.</p>
+            </div>
+
+            <form id="signup-form" class="auth-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="username" placeholder="Choose a username" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="Create a password (min 6 chars)" required minlength="6">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-shield-check"></i>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password" required minlength="6">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth-primary" style="margin-top: 20px;">Create Account</button>
+            </form>
+
+            <div class="auth-divider">
+                <span>OR</span>
+            </div>
+
+            <button id="google-btn" class="btn-auth-google">
+                <img src="https://img.icons8.com/color/24/000000/google-logo.png" alt="Google">
+                Sign up with Google
+            </button>
+
+            <p class="auth-switch">Already have an account? <a href="login.html">Login</a></p>
+            <div style="text-align: center; margin-top: 15px;">
+                <a href="index.html" style="color: var(--text-muted); font-size: 0.85rem; text-decoration: underline; transition: var(--transition);">Continue as Guest</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase & Auth Logic -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="auth.js"></script>
+</body>
+</html>
