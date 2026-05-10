@@ -106,15 +106,6 @@ To get live data, you need an API key from RapidAPI:
 - [ ] Implement push notifications for falling wickets and milestones *(Under Development)*.
 - [ ] Add multi-language support.
 
-## 🤝 Contributing (GSSoC Ready!)
-
-Contributions are always welcome! This project is beginner-friendly and perfect for open-source programs like **GirlScript Summer of Code (GSSoC)**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 👤 Author
 
