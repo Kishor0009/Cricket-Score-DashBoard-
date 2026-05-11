@@ -110,8 +110,8 @@ To get live data, you need an API key from RapidAPI:
 ## 👤 Author
 
 **Kishor Kumar**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Kishor Kumar](https://linkedin.com/in/yourprofile)
+- GitHub: https://github.com/Kishor0009
+- LinkedIn: https://www.linkedin.com/in/kishor-kumar-ba73b0323
 
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
